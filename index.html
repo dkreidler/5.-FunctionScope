@@ -13,8 +13,8 @@
 <body>
     <script>
         var x = 1;
-
-        function a() {
+        /* ------- trying a new version, calling x from within the y function --*/
+        /* function a() {
             var y = 2;
             output(y);
         }
@@ -22,6 +22,16 @@
         function b() {
             var z = 3;
             output(z);
+        }
+*/
+        function a() {
+            var y = 2;
+            output(x);
+        }
+
+        function b() {
+            var z = 3;
+            output(x);
         }
 
         function output(value) {
