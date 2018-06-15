@@ -24,6 +24,8 @@
             output(z);
         }
 */
+        /* ------- trying a new version, calling global x from within the a & b scopes --*/
+        /*
         function a() {
             var y = 2;
             output(x);
@@ -32,6 +34,16 @@
         function b() {
             var z = 3;
             output(x);
+        } */
+        /* ---- calling y and z from within the OTHER scoped function ---- */
+        function a() {
+            var y = 2;
+            output(z);
+        }
+
+        function b() {
+            var z = 3;
+            output(y);
         }
 
         function output(value) {
